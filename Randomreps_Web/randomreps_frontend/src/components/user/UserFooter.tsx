@@ -1,29 +1,25 @@
 // src/components/Footer.tsx
-import { FiMail } from "react-icons/fi";
-import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 
 export default function Footer() {
   return (
     <footer className="bg-brand-gray pt-24 pb-8 mt-32 px-4 sm:px-6 lg:px-8 relative font-body">
-      {/* Floating Newsletter Card */}
+      {/* Contact Us Banner */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="bg-brand-black rounded-[2rem] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8 shadow-2xl">
           <h2 className="font-heading font-black text-3xl md:text-4xl text-white uppercase max-w-sm leading-tight text-center md:text-left">
-            STAY UPTO DATE ABOUT OUR LATEST OFFERS
+            HAVE QUESTIONS? CONTACT US DIRECTLY
           </h2>
 
           <div className="w-full md:max-w-sm flex flex-col gap-3">
-            <div className="relative">
-              <FiMail className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 text-lg" />
-              <input
-                type="email"
-                placeholder="Enter your email address"
-                className="w-full pl-12 pr-4 py-3 rounded-full bg-white text-brand-black outline-none focus:ring-2 focus:ring-brand-black/20"
-              />
-            </div>
-            <button className="w-full bg-white text-brand-black font-medium py-3 rounded-full hover:bg-gray-100 transition-colors">
-              Subscribe to Newsletter
-            </button>
+            <a
+              href="https://www.facebook.com/profile.php?id=61582440006612"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full text-center bg-white text-brand-black font-medium py-4 rounded-full hover:bg-gray-100 transition-colors"
+            >
+              Contact Us on Facebook
+            </a>
           </div>
         </div>
       </div>
@@ -47,12 +43,12 @@ export default function Footer() {
             >
               <FaFacebookF />
             </a>
-            <a
+            {/* <a
               href="#"
               className="bg-white p-2 rounded-full border border-gray-200 hover:bg-brand-black hover:text-white transition-colors"
             >
               <FaInstagram />
-            </a>
+            </a> */}
           </div>
         </div>
 

@@ -1,22 +1,11 @@
 // src/components/Navbar.tsx
 import React from "react";
 import { Link } from "react-router-dom";
-import { FiSearch, FiShoppingCart, FiUser, FiMenu } from "react-icons/fi";
+import { FiSearch, FiMessageSquare, FiMenu } from "react-icons/fi";
 
 export default function Navbar() {
   return (
     <header className="w-full border-b border-gray-200 font-body">
-      {/* Top Promotional Banner */}
-      <div className="bg-brand-black text-white text-xs text-center py-2 w-full">
-        Sign up and get 20% off to your first order.{" "}
-        <a
-          href="#"
-          className="underline font-semibold ml-1 hover:text-gray-300"
-        >
-          Sign Up Now
-        </a>
-      </div>
-
       {/* Main Navigation Container */}
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
         {/* Left Side: Mobile Menu & Logo */}
@@ -38,7 +27,7 @@ export default function Navbar() {
             href="#"
             className="hover:text-brand-textMuted transition-colors flex items-center gap-1"
           >
-            Shop <span className="text-[10px]">▼</span>
+            Shop
           </a>
           <a href="#" className="hover:text-brand-textMuted transition-colors">
             On Sale
@@ -68,21 +57,15 @@ export default function Navbar() {
             <FiSearch />
           </button>
 
-          {/* Cart */}
-          <Link
-            to="user/cart"
+          {/* Cart / Facebook Link */}
+          <a
+            href="https://www.facebook.com/profile.php?id=61582440006612"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-2xl text-brand-black hover:text-gray-600 transition-colors"
           >
-            <FiShoppingCart />
-          </Link>
-
-          {/* Login */}
-          <Link
-            to="/auth"
-            className="text-2xl text-brand-black hover:text-gray-600 transition-colors"
-          >
-            <FiUser />
-          </Link>
+            <FiMessageSquare />
+          </a>
         </div>
       </nav>
     </header>
