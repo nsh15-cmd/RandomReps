@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap');
+
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+/* Base global overrides */
+body {
+  @apply bg-white text-brand-black font-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading uppercase;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
